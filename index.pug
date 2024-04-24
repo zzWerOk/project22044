@@ -1,0 +1,153 @@
+- let logo_img = 'img/logo-img.svg';
+- let logo_title = 'img/logo-title.svg';
+- let img_john_ramsey = 'img/john_ramsey.jpg';
+- let img_person1 = 'img/person1.jpg';
+- let img_person2 = 'img/person2.jpg';
+- let img_person3 = 'img/person3.jpg';
+- let img_fam1 = 'img/fam1.jpg';
+- let img_flower_icon = 'img/flower_icon.svg';
+
+- let img_googleplay = 'img/googleplay.png';
+- let img_appstore = 'img/appstore.png';
+
+- let about_link = '<a href="#">About John Ramsey</a>';
+- let donation_link = '<a href="#">Donation</a>';
+
+mixin line(image, name, date, price, type)
+    li.flower-li
+        div.flower-line
+            img.flower-image(src='img/' + image, alt=name)
+            div.flower-name-date
+                span.flower-nameText #{name}
+                span.flower-date #{date}
+            img.flower-type(src='img/' + type + '.png', alt="")
+            span.flower-price #{price}
+
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+
+        title B-Ouquets
+        link(type='text/css' href='./css/index.css' rel='stylesheet')
+        link(type='text/css' href='./css/media.css' rel='stylesheet')
+
+        link(href='https://fonts.googleapis.com' rel='preconnect')
+        link(href='https://fonts.gstatic.com' rel='preconnect' crossorigin)
+        link(href='https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap' rel='stylesheet')
+
+    body
+
+    //Заголовок
+    header
+        nav
+            //Лого сайта
+            div.logo
+                img(src=logo_img style='width:58px; height:58px;', alt="Logo")
+                img(src=logo_title, alt="Logo")
+            //Меню в заголовке
+            div.header-menu
+                a.a-link(href='#') About John Ramsey
+                a.a-link(href='#') Donation
+                div.download-btn
+                    a.a-Btn(href='#') Download App
+
+    //Секция с информацией о персоне
+    section.person-card-section
+        //Карточка персоны
+        div.person-card
+            //Изображенеие персоны
+            div.person-image
+                img(src=img_john_ramsey, alt="John Ramsey")
+            //Информация о персоне
+            div.person-data
+                //Имя / дата жизни и смерти
+                div.in-memory
+                    div In Memory of
+                    div John Ramsey
+                    div Feb 22, 1936 - Feb 12, 2024
+                //Информация о рождении и смерти персоны
+                div.timeline
+                    div
+                        //Декоративные элементы (точки и линии)
+                        div.timeline-lines
+                            div.dot &#9679;
+                            hr
+                            div.dot &#9679;
+                            hr
+                            div.dot &#9679;
+                    //Текст о рождении и смерти
+                    div.timeline-data
+                        span 87 years old <br><br>
+                        span Born on February 22, 1936 in Warsaw, Ohio,
+                        span United States <br><br>
+                        span Passed away on February 12, 2024 in Kyle,
+                        span Texas, United States
+                        <br>
+                    a.a-Btn(href='#') How to Donate
+
+    //Секция с заметками о персоне от семьи и фотографии
+    section.personal-note-section
+        div.personal-note-bar
+            //Блок заметок
+            div.family-note
+                span.note-title Personal note<br>from Nora & Family
+                span.note-text This memorial website was created in loving memory of our Daddy and Papaw, James L. Fouss, P.E., PhD, age 87, who passed away peacefully on February 12, 2024 at the home of his son, in Kyle, Texas. James, known to most as Jim, was born on February 22, 1936 in the Village of Warsaw, Coshocton County, Ohio to the late Raymond L. and Hazel (Sergent) Fouss. In addition to his parents, he is preceded in death by his wife of over 61 years, Judith L. (Theiss) Fouss. He is survived by his sister Patti (Roger) Woodford of Beverly, Ohio; daughter JoAnna P. “Jody” (Larry) Weaver and son James M. (Angela) Fouss; 5 grandchildren, Matthew Fouss, Audrey Fouss, Erin Piper, Katy Bridges, and Meagan Suehs; and 6 great-grandchildren, Johnathan Fouss, Laney and Anya Piper, Presley and Willa Bridges, and LeAnn Suehs, all from Texas.
+            //Изображения
+            div.pictures
+                div
+                    img(src=img_fam1, alt="Family")
+                div
+                    img(src=img_person1, alt="John Ramsey")
+                    img(src=img_person2, alt="John Ramsey")
+                    img(src=img_person3, alt="John Ramsey")
+
+    //Секция цветы
+    section.flowers-section
+        div.flowers-bar
+            div.flowers-note
+                //Иконка и заглавие текстового блока
+                div.flowers-title
+                    img(src=img_flower_icon, alt="Logo")
+                    span B-Ouquets
+                //Текст текстового блока
+                span.flowers-text B-Ouquets are forever owners with a customized card you can send to the family. Unlike traditional owners, B-Ouquets are memories that stay forever in digital form and help withnal expenses. Proceeds go to the family not the orist.
+            //Список товара (цветов)
+            div.flowers-list
+                div.flowers-card
+                    ul.flowers-ul
+                        each val in [{image:"anonimus.png", name: "Anonimus", date: "Feb 21, 2024, 9:41", price: "$385", type: "usd"}, {image:"diananogina1.png", name: "Diana Nogina", date: "Feb 21, 2024, 9:41", price: "$385", type: "apple"}, {image:"diananogina2.png", name: "Diana Nogina", date: "Feb 21, 2024, 9:41", price: "$385", type: "apple"}]
+                            +line(val.image, val.name, val.date, val.price, val.type)
+                    a.a-Btn(href='#') Donate
+
+    //Секция о приложении
+    section.download-app-section
+        div.download-app-bar
+            //Пустой div для разделения
+            div
+            div.download-app-info
+                //Заголовок описания приложения
+                span.download-app-info-title Download App
+                //Описание приложения
+                span.download-app-info-text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into e
+                //Кнопки магазинов приложений
+                div.download-app-info-buttons
+                    a(href='#')
+                        img(src=img_googleplay, alt="Google Play")
+                    a(href='#')
+                        img(src=img_appstore, alt="appStore")
+
+    //футер
+    footer
+        div.footer-bar
+            //Логотип
+            div.logo
+                img(src=logo_img style='width:58px; height:58px;', alt="Logo")
+                img(src=logo_title, alt="Logo")
+            //Навигация футера
+            div
+                a.a-link(href='#') About John Ramsey
+                a.a-link(href='#') Donation
+                div.download-white-btn
+                    a.a-link(href='#') Download App

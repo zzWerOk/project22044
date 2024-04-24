@@ -1,0 +1,121 @@
+@media (max-width: 1117px) {
+  body {
+    width: fit-content;
+  }
+  header {
+    padding-top: 0;
+  }
+  header nav {
+    display: none;
+  }
+  .person-card-section {
+    padding-top: 0;
+  }
+  .person-card-section .person-card {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+  }
+  .person-card-section .person-card .person-image img {
+    width: 100%;
+  }
+  .person-card-section .person-card .person-data {
+    padding: 0;
+    margin-top: -328px;
+    width: 100%;
+  }
+  .person-card-section .person-card .person-data .in-memory {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    width: 100%;
+    padding-bottom: 112px;
+    color: white;
+  }
+  .person-card-section .person-card .person-data .in-memory div {
+    margin-left: 30px;
+  }
+  .person-card-section .person-card .person-data .timeline {
+    padding-top: 39px;
+    margin-top: -67px;
+    margin-left: 0;
+    width: 100%;
+    background-color: #fff;
+  }
+  .person-card-section .person-card .person-data .timeline .timeline-lines .dot {
+    margin-left: 25px;
+  }
+  .person-card-section .person-card .person-data .timeline .timeline-lines hr {
+    margin-left: 25px;
+  }
+  .person-card-section .person-card .person-data .timeline .timeline-data span {
+    margin-left: 25px;
+  }
+  .person-card-section .person-card .person-data .timeline a {
+    margin: 20px 50px 50px;
+  }
+  .personal-note-section .personal-note-bar {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+  }
+  .personal-note-section .personal-note-bar .family-note {
+    width: unset;
+    padding: 95px 25px 35px;
+  }
+  .personal-note-section .personal-note-bar .pictures {
+    width: auto;
+    position: unset;
+    display: unset;
+    right: unset;
+  }
+  .flowers-section .flowers-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .flowers-section .flowers-bar .flowers-note {
+    width: unset;
+    margin-right: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .flowers-section .flowers-bar .flowers-list {
+    margin-top: 50px;
+    margin-left: 0;
+  }
+  .download-app-section {
+    background-position: -550px;
+  }
+  .download-app-section .download-app-bar {
+    width: unset;
+  }
+  .download-app-section .download-app-bar div:nth-child(1) {
+    width: 0;
+    display: none;
+  }
+  .download-app-section .download-app-bar .download-app-info {
+    padding-left: 25px;
+    padding-right: 25px;
+    width: unset;
+    margin-top: 130px;
+  }
+  .download-app-section .download-app-bar .download-app-info .download-app-info-buttons {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 540px;
+  }
+  footer .footer-bar {
+    margin-left: -25%;
+    flex-direction: row;
+    justify-content: center;
+    width: unset;
+  }
+  footer .footer-bar div {
+    width: unset;
+  }
+  footer .footer-bar div:nth-child(1) {
+    margin-top: -13px;
+  }
+  footer .footer-bar div:nth-child(2) {
+    display: none;
+  }
+}
+/*# sourceMappingURL=media.css.map */

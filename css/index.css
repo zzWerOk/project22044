@@ -1,0 +1,356 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  width: auto;
+  margin: 0;
+  overflow-x: hidden;
+}
+.a-Btn {
+  height: 44px;
+  line-height: 44px;
+  border-radius: 6px;
+  color: #FFFFFF;
+  background: #000000;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+}
+.a-link {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+}
+.download-btn {
+  display: flex;
+  width: 221px;
+  flex-direction: column;
+}
+.download-white-btn {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+}
+.logo {
+  position: relative;
+  width: 50%;
+  display: flex;
+}
+.logo img:nth-child(1) {
+  position: absolute;
+  left: 0;
+}
+.logo img:nth-child(2) {
+  position: absolute;
+  left: 71px;
+  top: 20px;
+}
+header {
+  padding-top: 30px;
+  width: 100%;
+}
+header nav {
+  margin: auto auto -75px;
+  width: 1117px;
+  display: flex;
+  justify-content: space-around;
+}
+header nav .header-menu {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+}
+.person-card-section {
+  background-image: url('/img/header_block_back.svg');
+  background-size: cover;
+  background-color: #f0efef;
+  padding-top: 165px;
+}
+.person-card-section .person-card {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -25px;
+  position: relative;
+  width: 1117px;
+  display: flex;
+  box-shadow: 0 4px 60px 0 #0000001A;
+  height: 603px;
+  background-color: #FFFFFF;
+}
+.person-card-section .person-card .person-data {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 75px 0 70px 81px;
+}
+.person-card-section .person-card .person-data .in-memory {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.person-card-section .person-card .person-data .in-memory div:nth-child(1) {
+  font-weight: 400;
+  font-size: 18px;
+  padding: 0;
+  text-transform: uppercase;
+}
+.person-card-section .person-card .person-data .in-memory div:nth-child(2) {
+  font-weight: 600;
+  font-size: 48px;
+  padding: 0;
+}
+.person-card-section .person-card .person-data .in-memory div:nth-child(3) {
+  font-weight: 600;
+  font-size: 24px;
+  padding: 0;
+}
+.person-card-section .person-card .person-data .timeline {
+  display: flex;
+  flex-direction: column;
+  margin-top: 54px;
+  margin-left: 16px;
+}
+.person-card-section .person-card .person-data .timeline .timeline-lines {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.person-card-section .person-card .person-data .timeline .timeline-lines hr:nth-child(2) {
+  width: 51px;
+  border: 1px dashed #000000;
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -21.5px;
+  top: 33px;
+}
+.person-card-section .person-card .person-data .timeline .timeline-lines .dot:nth-child(3) {
+  position: absolute;
+  top: 62px;
+}
+.person-card-section .person-card .person-data .timeline .timeline-lines hr:nth-child(4) {
+  width: 61px;
+  border: 1px dashed #000000;
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -26px;
+  top: 101px;
+}
+.person-card-section .person-card .person-data .timeline .timeline-lines .dot:nth-child(5) {
+  position: absolute;
+  top: 136px;
+}
+.person-card-section .person-card .person-data .timeline .timeline-data {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-top: -22px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 28px;
+}
+.person-card-section .person-card .person-data .timeline .timeline-data span:nth-child(2) {
+  margin-top: 6px;
+}
+.person-card-section .person-card .person-data .timeline .timeline-data span:nth-child(3) {
+  line-height: 18px;
+}
+.person-card-section .person-card .person-data .timeline .timeline-data span:nth-child(4) {
+  margin-top: 11px;
+}
+.personal-note-section {
+  background-image: url('/img/personal_note_back.svg');
+  background-size: cover;
+  background-color: #000;
+  color: #FFFFFF;
+  width: 100%;
+}
+.personal-note-section .personal-note-bar {
+  margin: auto;
+  width: 1117px;
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.personal-note-section .personal-note-bar .family-note {
+  width: 491px;
+  padding-top: 165px;
+  padding-bottom: 121px;
+  display: flex;
+  flex-direction: column;
+}
+.personal-note-section .personal-note-bar .family-note .note-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 52px;
+}
+.personal-note-section .personal-note-bar .family-note .note-text {
+  margin-top: 35px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.personal-note-section .pictures {
+  position: absolute;
+  display: grid;
+  justify-items: end;
+  right: 25px;
+  width: 50%;
+}
+.personal-note-section .pictures div img {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 3px;
+}
+.personal-note-section .pictures div {
+  width: 101%;
+}
+.flowers-section {
+  background-color: #CAE793;
+  width: 100%;
+}
+.flowers-section .flowers-bar {
+  margin: auto;
+  width: 1117px;
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.flowers-section .flowers-bar .flowers-note {
+  width: 45%;
+  margin-right: 150px;
+}
+.flowers-section .flowers-bar .flowers-note .flowers-title {
+  display: flex;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 52px;
+  margin-bottom: 30px;
+}
+.flowers-section .flowers-bar .flowers-note .flowers-title span {
+  margin-left: 30px;
+}
+.flowers-section .flowers-bar .flowers-note .flowers-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+.flowers-section .flowers-bar .flowers-list {
+  width: 50%;
+  margin-left: 100px;
+}
+.flowers-section .flowers-bar .flowers-list .flowers-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 4px 60px 0 #0000001A;
+  padding: 40px 55px;
+}
+.flowers-section .flowers-bar .flowers-list .flowers-card .flowers-ul {
+  padding: 0;
+}
+.flowers-section .flowers-bar .flowers-list .flowers-card .flower-li {
+  list-style: none;
+}
+.flowers-section .flowers-bar .flowers-list .flowers-card .flower-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.flowers-section .flowers-bar .flowers-list .flowers-card .flower-line .flower-image {
+  width: 20%;
+}
+.flowers-section .flowers-bar .flowers-list .flowers-card .flower-line .flower-name-date {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60%;
+}
+.flowers-section .flowers-bar .flowers-list .flowers-card .flower-line .flower-name-date .flower-nameText {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+}
+.flowers-section .flowers-bar .flowers-list .flowers-card .flower-line .flower-name-date .flower-date {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 25px;
+}
+.flowers-section .flowers-bar .flowers-list .flowers-card .flower-line .flower-price {
+  margin-left: 10px;
+  margin-right: 5px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+}
+.download-app-section {
+  background-image: url('/img/downloadapp_back.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.download-app-section .download-app-bar {
+  margin: auto;
+  width: 1117px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.download-app-section .download-app-bar div:nth-child(1) {
+  width: 50%;
+}
+.download-app-section .download-app-bar .download-app-info {
+  width: 42%;
+  margin-top: 264px;
+  margin-bottom: 264px;
+  display: flex;
+  flex-direction: column;
+}
+.download-app-section .download-app-bar .download-app-info .download-app-info-title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 52px;
+  margin-bottom: 13px;
+}
+.download-app-section .download-app-bar .download-app-info .download-app-info-text {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.download-app-section .download-app-bar .download-app-info .download-app-info-buttons {
+  display: flex;
+  margin-top: 60px;
+}
+footer {
+  width: 100%;
+}
+footer .footer-bar {
+  margin: auto;
+  width: 1117px;
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 50px;
+}
+footer .footer-bar div {
+  width: 50%;
+}
+footer .footer-bar div:nth-child(1) {
+  margin-top: -13px;
+}
+footer .footer-bar div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+/*# sourceMappingURL=index.css.map */

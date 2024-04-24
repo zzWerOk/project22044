@@ -1,0 +1,510 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+
+  width: auto;
+
+  margin: 0;
+
+  overflow-x: hidden;
+}
+
+//Кнопка с черным фоном
+.a-Btn {
+  height: 44px;
+  line-height: 44px;
+  border-radius: 6px;
+  color: #FFFFFF;
+  background: #000000;
+  font-weight: 500;
+  font-size: 16px;
+
+  text-align: center;
+  text-decoration: none;
+
+}
+
+//Кнопка без фона
+.a-link {
+  text-decoration: none;
+  color: #000000;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+//Фон кнопки "скачать приложение"
+.download-btn {
+  display: flex;
+  width: 221px;
+  flex-direction: column;
+}
+
+//Фон кнопки "скачать приложение" в футере
+.download-white-btn {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+}
+
+
+//Лого сайта
+.logo {
+  position: relative;
+  width: 50%;
+  display: flex;
+
+  img:nth-child(1) {
+    position: absolute;
+    left: 0;
+  }
+
+  img:nth-child(2) {
+    position: absolute;
+    left: 71px;
+    top: 20px;
+  }
+}
+
+//Заголовок
+header {
+  padding-top: 30px;
+  width: 100%;
+
+  //Навигация
+  nav {
+    margin: auto auto -75px;
+    width: 1117px;
+
+    display: flex;
+    justify-content: space-around;
+
+    //Меню в заголовке
+    .header-menu {
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
+}
+
+//Секция с информацией о персоне
+.person-card-section {
+
+  background-image: url('/img/header_block_back.svg');
+  background-size: cover;
+  background-color: #f0efef;
+  padding-top: 165px;
+
+  //Карточка персоны
+  .person-card {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -25px;
+    position: relative;
+
+    width: 1117px;
+
+    display: flex;
+
+    box-shadow: 0 4px 60px 0 #0000001A;
+    height: 603px;
+
+    background-color: #FFFFFF;
+
+    //Изображенеие персоны
+    .person-image {
+
+    }
+
+    //Информация о персоне
+    .person-data {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      padding: 75px 0 70px 81px;
+
+      //Имя / дата жизни и смерти
+      .in-memory {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        div:nth-child(1) {
+          font-weight: 400;
+          font-size: 18px;
+          padding: 0;
+          text-transform: uppercase;
+        }
+
+        div:nth-child(2) {
+          font-weight: 600;
+          font-size: 48px;
+          padding: 0;
+        }
+
+        div:nth-child(3) {
+          font-weight: 600;
+          font-size: 24px;
+          padding: 0;
+        }
+      }
+
+      //Информация о рождении и смерти персоны
+      .timeline {
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 54px;
+        margin-left: 16px;
+
+        //Декоративные элементы (точки и линии)
+        .timeline-lines {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+
+          hr:nth-child(2) {
+            width: 51px;
+            border: 1px dashed #000000;
+            transform: rotate(-90deg);
+
+            position: absolute;
+            left: -21.5px;
+            top: 33px;
+          }
+
+          .dot:nth-child(3) {
+            position: absolute;
+            top: 62px;
+          }
+
+          hr:nth-child(4) {
+            width: 61px;
+
+            border: 1px dashed #000000;
+            transform: rotate(-90deg);
+
+            position: absolute;
+            left: -26px;
+            top: 101px;
+          }
+
+          .dot:nth-child(5) {
+            position: absolute;
+            top: 136px;
+          }
+
+        }
+
+        //Текст о рождении и смерти
+        .timeline-data {
+          display: flex;
+          flex-direction: column;
+
+          margin-left: 20px;
+          margin-top: -22px;
+
+          font-weight: 300;
+          font-size: 14px;
+
+          line-height: 28px;
+
+          span:nth-child(2) {
+            margin-top: 6px;
+          }
+
+          span:nth-child(3) {
+            line-height: 18px;
+          }
+
+          span:nth-child(4) {
+            margin-top: 11px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Секция с заметками о персоне от семьи и фотографии
+.personal-note-section {
+
+  background-image: url('/img/personal_note_back.svg');
+  background-size: cover;
+  background-color: #000;
+  color: #FFFFFF;
+
+  width: 100%;
+
+  .personal-note-bar {
+    margin: auto;
+    width: 1117px;
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    //Блок заметок
+    .family-note {
+      width: 491px;
+      padding-top: 165px;
+      padding-bottom: 121px;
+      display: flex;
+      flex-direction: column;
+
+
+      //Заголовок заметок
+      .note-title {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 52px;
+      }
+
+      //Текст заметок
+      .note-text {
+        margin-top: 35px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+
+  }
+
+  //Изображения
+  .pictures {
+    position: absolute;
+    display: grid;
+    justify-items: end;
+    right: 25px;
+    width: 50%;
+  }
+
+  //Свойства каждого изображения в блоке "Изображения"
+  .pictures div img {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+  }
+
+  .pictures div {
+
+    width: 101%;
+  }
+
+}
+
+//Секция цветы
+.flowers-section {
+
+  background-color: #CAE793;
+
+  width: 100%;
+
+  .flowers-bar {
+    margin: auto;
+    width: 1117px;
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .flowers-note {
+      width: 45%;
+
+      margin-right: 150px;
+
+      //Иконка и заглавие текстового блока
+      .flowers-title {
+        display: flex;
+
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 52px;
+
+        span {
+          margin-left: 30px;
+        }
+
+        margin-bottom: 30px;
+      }
+
+      //Текст текстового блока
+      .flowers-text {
+        //margin-top: 25px;
+
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    //Список товара (цветов)
+    .flowers-list {
+      width: 50%;
+
+      margin-left: 100px;
+
+      .flowers-card {
+        display: flex;
+        flex-direction: column;
+
+        background-color: #fff;
+        box-shadow: 0 4px 60px 0 #0000001A;
+
+        padding: 40px 55px;
+
+        .flowers-ul {
+          padding: 0;
+        }
+
+        .flower-li {
+          list-style: none;
+        }
+
+        .flower-line {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          .flower-image {
+            width: 20%;
+          }
+
+
+          .flower-name-date {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            width: 60%;
+
+            .flower-nameText {
+              font-weight: 600;
+              font-size: 15px;
+              line-height: 25px;
+            }
+
+            .flower-date {
+              font-weight: 300;
+              font-size: 13px;
+              line-height: 25px;
+            }
+
+          }
+
+          .flower-type {
+
+          }
+
+          .flower-price {
+            margin-left: 10px;
+            margin-right: 5px;
+
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 28px;
+          }
+
+        }
+
+      }
+    }
+  }
+}
+
+//Секция о приложении
+.download-app-section {
+
+  background-image: url('/img/downloadapp_back.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  width: 100%;
+
+  .download-app-bar {
+    margin: auto;
+    width: 1117px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    //Пустой div для разделения
+    div:nth-child(1) {
+      width: 50%;
+    }
+
+    .download-app-info {
+      width: 42%;
+      margin-top: 264px;
+      margin-bottom: 264px;
+      display: flex;
+      flex-direction: column;
+
+      //Заголовок описания приложения
+      .download-app-info-title {
+        color: #fff;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 52px;
+        margin-bottom: 13px;
+      }
+
+      //Описание приложения
+      .download-app-info-text {
+        color: #fff;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+
+      }
+
+      //Кнопки магазинов приложений
+      .download-app-info-buttons {
+        display: flex;
+
+        margin-top: 60px;
+
+      }
+    }
+  }
+}
+
+//футер
+footer {
+
+  width: 100%;
+
+  .footer-bar {
+    margin: auto;
+    width: 1117px;
+
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 50px;
+
+    div {
+      width: 50%;
+    }
+
+    div:nth-child(1) {
+      margin-top: -13px;
+    }
+
+    div:nth-child(2) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}

@@ -1,0 +1,200 @@
+@media (max-width: 1117px) {
+
+  body {
+    width: fit-content;
+
+  }
+
+  //Заголовок
+  header {
+    padding-top: 0;
+
+    nav {
+      display: none;
+    }
+  }
+
+  .person-card-section {
+    padding-top: 0;
+
+    //Карточка персоны
+    .person-card {
+      display: flex;
+      height: auto;
+      flex-direction: column;
+
+      //Изображенеие персоны
+      .person-image {
+        img {
+          width: 100%;
+        }
+      }
+
+      //Информация о персоне
+      .person-data {
+        padding: 0;
+        margin-top: -328px;
+        width: 100%;
+
+        //Имя / дата жизни и смерти
+        .in-memory {
+          background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+          width: 100%;
+
+          padding-bottom: 112px;
+
+          color: white;
+
+          div {
+            margin-left: 30px;
+          }
+
+        }
+
+        //Информация о рождении и смерти персоны
+        .timeline {
+
+          padding-top: 39px;
+
+          margin-top: -67px;
+          margin-left: 0;
+          width: 100%;
+
+          background-color: #fff;
+
+          //Декоративные элементы (точки и линии)
+          .timeline-lines {
+
+            .dot {
+              margin-left: 25px;
+            }
+
+            hr {
+              margin-left: 25px;
+            }
+
+          }
+
+          //Текст о рождении и смерти
+          .timeline-data {
+            span {
+              margin-left: 25px;
+            }
+
+          }
+
+          a {
+            margin: 20px 50px 50px;
+          }
+        }
+      }
+    }
+  }
+
+
+  //Секция с заметками о персоне от семьи и фотографии
+  .personal-note-section {
+
+    .personal-note-bar {
+
+      flex-direction: column;
+      align-items: center;
+      padding-top: 0;
+
+      //Блок заметок
+      .family-note {
+        width: unset;
+        padding: 95px 25px 35px;
+      }
+
+      //Изображения
+      .pictures {
+        width: auto;
+        position: unset;
+        display: unset;
+        right: unset;
+      }
+    }
+  }
+
+  //Секция цветы
+  .flowers-section {
+
+    .flowers-bar {
+      flex-direction: column;
+      align-items: center;
+
+      .flowers-note {
+        width: unset;
+        margin-right: 0;
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+
+      //Список товара (цветов)
+      .flowers-list {
+        margin-top: 50px;
+        margin-left: 0;
+      }
+
+    }
+  }
+
+  //Секция о приложении
+  .download-app-section {
+
+    background-position: -550px;
+
+    .download-app-bar {
+      width: unset;
+
+      //Пустой div для разделения
+      div:nth-child(1) {
+        width: 0;
+        display: none;
+      }
+
+      .download-app-info {
+        padding-left: 25px;
+        padding-right: 25px;
+        width: unset;
+        margin-top: 130px;
+
+        //Кнопки магазинов приложений
+        .download-app-info-buttons {
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 540px;
+        }
+
+      }
+
+
+    }
+
+  }
+
+  //футер
+  footer {
+
+    .footer-bar {
+      margin-left: -25%;
+      flex-direction: row;
+      justify-content: center;
+      width: unset;
+
+      div {
+        width: unset;
+      }
+
+      div:nth-child(1) {
+        margin-top: -13px;
+      }
+
+      div:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+
+}
